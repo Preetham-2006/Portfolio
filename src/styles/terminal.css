@@ -1,0 +1,23 @@
+/* Interactive terminal in About */
+.termwrap{grid-column:1/-1;margin-top:6px}
+.term{border-radius:16px;overflow:hidden;background:var(--term-bg);color:var(--term-fg);border:1px solid var(--line);box-shadow:var(--shadow);font-family:var(--f-mono);font-size:13.5px;cursor:text}
+.term .tb{display:flex;align-items:center;gap:7px;padding:10px 14px;background:var(--term-bar);border-bottom:1px solid rgba(255,255,255,.08)}
+.term .tb i{width:11px;height:11px;border-radius:50%;background:#ff5f57}
+.term .tb i:nth-child(2){background:#febc2e}
+.term .tb i:nth-child(3){background:#28c840}
+.term .tb span{margin-left:8px;font-size:12px;color:var(--term-mute);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tout{height:min(290px,50vh);overflow:auto;padding:14px 16px 6px;line-height:1.65;overscroll-behavior:contain}
+.t-ln{white-space:pre-wrap;overflow-wrap:anywhere}
+.t-ln.res{color:var(--term-dim)}
+.t-ln.cmd{color:#fff}
+.t-ln.err{color:#ff8f8f}
+.term .pr{color:var(--term-ink)}
+.tcaret{display:inline-block;width:8px;height:1.1em;background:var(--term-ink);vertical-align:-.2em;margin-left:2px;animation:blink 1s steps(2) infinite}
+.tin{display:flex;align-items:center;gap:8px;padding:6px 16px 12px}
+.tin input{flex:1;min-width:0;background:none;border:0;outline:0;color:#fff;font:inherit;padding:4px 0}
+.tin input::placeholder{color:var(--term-mute)}
+.term:focus-within{border-color:var(--accent)}
+.tchips{display:flex;gap:8px;flex-wrap:wrap;padding:10px 16px 14px;border-top:1px solid rgba(255,255,255,.08)}
+.tchips button{font-family:var(--f-mono);font-size:12px;padding:6px 11px;border-radius:8px;border:1px solid rgba(255,255,255,.18);background:none;color:#cbd3f0}
+.tchips button:hover,.tchips button:focus-visible{border-color:var(--term-ink);color:var(--term-ink)}
+@media(max-width:700px){.tin input{font-size:16px}.term{font-size:12.5px}}

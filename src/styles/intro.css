@@ -1,0 +1,14 @@
+.intro{position:fixed;inset:0;z-index:200;background:var(--bg);color:var(--fg);display:grid;place-items:center;align-content:center;gap:18px;transition:transform .9s cubic-bezier(.77,0,.18,1)}
+.intro.out{transform:translateY(-100%)}
+.intro .n{font-family:var(--f-display);font-weight:800;font-size:clamp(72px,18vw,180px);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.intro .bar{height:3px;width:min(280px,60vw);background:color-mix(in srgb,var(--fg) 18%,transparent);border-radius:3px;overflow:hidden}
+.intro .bar i{display:block;height:100%;background:var(--mark);width:0}
+.intro .who{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+/* Intro photo */
+.iwrap{position:relative;width:140px;height:140px;display:grid;place-items:center;animation:ipop .8s cubic-bezier(.2,.9,.3,1.3) both}
+.iwrap svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.iwrap circle{fill:none;stroke-width:4}
+.iwrap .it{stroke:color-mix(in srgb,var(--fg) 16%,transparent)}
+.iwrap .ip{stroke:var(--accent);stroke-linecap:round}
+.ipic{width:104px;height:104px;border-radius:50%;object-fit:cover;object-position:50% 38%}
+@keyframes ipop{from{opacity:0;transform:scale(.6)}}

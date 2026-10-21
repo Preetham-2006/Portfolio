@@ -1,0 +1,17 @@
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:18px;perspective:1000px}
+.card{position:relative;text-align:left;padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--surface);display:flex;flex-direction:column;gap:14px;min-width:0;
+  transition:transform .15s,opacity .3s,border-color .3s,box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+.card:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.card.dim{opacity:.3}
+.card.hit{border-color:var(--mark);box-shadow:0 0 0 3px color-mix(in srgb,var(--mark) 25%,transparent)}
+.card .idx{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.card h3{font-size:26px}
+.card p{color:var(--muted);font-size:15px}
+.card .stack{margin-top:0}
+.card .more{margin-top:auto;font-size:14px;font-weight:600;color:var(--accent)}
+.viz{height:84px;border-radius:12px;background:var(--bg2);display:block;width:100%}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;
+  background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%)}
+.card:hover::after{opacity:1}
+.card .more{transition:transform .25s}
+.card:hover .more{transform:translateX(6px)}

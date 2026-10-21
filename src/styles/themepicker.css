@@ -1,0 +1,10 @@
+.tp{position:relative}
+.tp .sw{width:16px;height:16px;border-radius:50%;border:1px solid var(--line);display:inline-block}
+.tmenu{position:absolute;right:0;top:calc(100% + 8px);min-width:210px;padding:6px;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow);display:grid;gap:2px;z-index:70}
+.tmenu button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:0;padding:9px 10px;border-radius:10px}
+.tmenu button:hover,.tmenu button.on{background:var(--accent-soft)}
+.tmenu b{font-weight:600;flex:1}
+.tmenu small{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.tmenu .chips{display:flex}
+.tmenu .chips i{width:16px;height:16px;border-radius:50%;border:1px solid var(--line);margin-left:-5px}
+.tmenu .chips i:first-child{margin-left:0}

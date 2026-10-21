@@ -1,0 +1,25 @@
+{
+  "name": "preetham-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  },
+  "description": "Data science portfolio of Jaini Sai Preetham",
+  "author": "Jaini Sai Preetham",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

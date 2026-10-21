@@ -1,0 +1,15 @@
+.cgrid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:800px){.cgrid2{grid-template-columns:1fr}}
+.cl{display:grid;gap:10px;align-content:start}
+.row{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);min-width:0}
+.row .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);width:68px;flex:none}
+.row .v{min-width:0;overflow-wrap:anywhere;flex:1;text-decoration:none}
+.row button,.row a.go{border:1px solid var(--line);background:var(--bg2);border-radius:8px;padding:5px 11px;font-size:13px;text-decoration:none}
+.row button:hover,.row a.go:hover{border-color:var(--accent);color:var(--accent)}
+form.msg{padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--surface);display:grid;gap:12px}
+form.msg h3{font-size:22px}
+form.msg label{font-size:13px;color:var(--muted);display:grid;gap:5px}
+form.msg input,form.msg select,form.msg textarea{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+form.msg textarea{min-height:92px;resize:vertical}
+.preview{font-family:var(--f-mono);font-size:12.5px;white-space:pre-wrap;background:var(--bg2);border-radius:10px;padding:12px;color:var(--muted);min-height:60px}
+footer{margin-top:90px;padding:28px 0 40px;border-top:1px solid var(--line);display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;color:var(--muted);font-size:14px;position:relative;z-index:1}

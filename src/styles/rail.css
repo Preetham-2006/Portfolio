@@ -1,0 +1,8 @@
+.rail{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);z-index:40;display:none;flex-direction:column;gap:4px}
+@media(min-width:1300px){.rail{display:flex}}
+.rail a{display:flex;align-items:center;justify-content:flex-end;gap:10px;height:22px;text-decoration:none}
+.rail a span{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);background:var(--surface);border:1px solid var(--line);padding:3px 8px;border-radius:6px;opacity:0;transform:translateX(8px);transition:opacity .25s,transform .25s;pointer-events:none}
+.rail a:hover span,.rail a:focus-visible span{opacity:1;transform:none}
+.rail a i{width:8px;height:8px;border-radius:99px;background:var(--line);transition:height .3s,background .3s}
+.rail a.on i{background:var(--mark);height:22px}
+.rail a:hover i{background:var(--accent)}

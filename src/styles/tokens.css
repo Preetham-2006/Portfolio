@@ -1,0 +1,33 @@
+/* Design tokens. Each theme is one [data-palette] block. Edit colours here.
+   --accent main colour, --mark second accent, --c3 third accent, --good status dot. */
+:root{
+  --f-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --f-body:'Instrument Sans','Segoe UI',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  --gutter:max(16px,env(safe-area-inset-left,0px));
+  /* Terminal card keeps a deep plum surface in every theme */
+  --term-bg:#17101f; --term-bar:#20172b; --term-fg:#ebe3f1; --term-dim:#c0b4cb; --term-mute:#85778f; --term-ink:#e0b865;
+  /* Porcelain is the fallback until a palette is applied */
+  --bg:#f7f3ee; --bg2:#efe8df; --surface:#fffdfa; --fg:#2a1f2b; --muted:#6b5d6c; --line:#e0d6cb;
+  --accent:#8a2a5c; --accent-ink:#ffffff; --accent-soft:#f3dde8; --mark:#a9702a; --c3:#2f6f73; --good:#2f7d57;
+  --shadow:0 16px 36px -24px rgba(42,31,43,.35);
+  color-scheme:light;
+}
+
+/* Aubergine and Brass (dark) */
+:root[data-palette="aubergine"]{
+  --bg:#14101a; --bg2:#1b1624; --surface:#221b2d; --fg:#efe9f5; --muted:#a99bb8; --line:#352b45;
+  --accent:#d9ad5f; --accent-ink:#1d1405; --accent-soft:#3a2e1c; --mark:#c68ad8; --c3:#8fbfae; --good:#7fd1a0;
+  --shadow:0 16px 36px -24px rgba(0,0,0,.75); color-scheme:dark}
+
+/* Porcelain and Mulberry (light) */
+:root[data-palette="porcelain"]{
+  --bg:#f7f3ee; --bg2:#efe8df; --surface:#fffdfa; --fg:#2a1f2b; --muted:#6b5d6c; --line:#e0d6cb;
+  --accent:#8a2a5c; --accent-ink:#ffffff; --accent-soft:#f3dde8; --mark:#a9702a; --c3:#2f6f73; --good:#2f7d57;
+  --shadow:0 16px 36px -24px rgba(42,31,43,.35); color-scheme:light}
+
+/* Forest and Copper (dark) */
+:root[data-palette="forest"]{
+  --bg:#0e1512; --bg2:#131d19; --surface:#18241f; --fg:#e8efe9; --muted:#96aa9f; --line:#26372f;
+  --accent:#e0915a; --accent-ink:#1f0e04; --accent-soft:#3a2618; --mark:#a3cba6; --c3:#72b7bb; --good:#7ed6a3;
+  --shadow:0 16px 36px -24px rgba(0,0,0,.75); color-scheme:dark}

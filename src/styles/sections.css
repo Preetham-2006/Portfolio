@@ -1,0 +1,12 @@
+section{padding:84px 0 12px;position:relative;z-index:1}
+.sh{display:flex;align-items:baseline;gap:16px;margin-bottom:34px;flex-wrap:wrap}
+.sh h2{font-size:clamp(32px,5vw,52px);font-weight:700}
+.sh .label{margin-left:auto}
+.rv.pre{opacity:.35;transform:translateY(18px)}
+.rv{transition:opacity .7s,transform .7s}
+.sh{position:relative;padding-bottom:14px}
+.sh h2 span{font-variant-numeric:tabular-nums}
+.sline{position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--mark));border-radius:3px;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.sline.go{width:96px}
+.sw .w{opacity:.28;transition:opacity .35s}
+.sw .w.on{opacity:1}

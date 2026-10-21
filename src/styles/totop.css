@@ -1,0 +1,7 @@
+.totop{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:52px;height:52px;border-radius:50%;border:0;background:var(--surface);box-shadow:var(--shadow);display:grid;place-items:center;z-index:70;opacity:0;transform:translateY(16px) scale(.9);pointer-events:none;transition:opacity .3s,transform .3s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.totop circle{fill:none;stroke-width:3}
+.totop .t{stroke:var(--line)}
+.totop .p{stroke:var(--accent);stroke-linecap:round;stroke-dasharray:138.2;transition:stroke-dashoffset .1s}
+.totop span{font-size:18px;line-height:1}
